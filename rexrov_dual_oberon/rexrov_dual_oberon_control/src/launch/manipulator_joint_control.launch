@@ -1,0 +1,17 @@
+<launch>
+
+  <!-- Load joint controller configurations from YAML file to parameter server -->
+  <rosparam file="$(find rexrov_dual_oberon_control)/src/config/joint_control_oberon.yaml" command="load"/>
+
+  <!-- load the controllers -->
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+    output="screen" ns="/rexrov" args="L_j1_PC L_j2_PC L_j3_PC L_j4_PC L_j5_PC L_j6_PC L_gripL_PC L_gripR_PC R_j1_PC R_j2_PC R_j3_PC R_j4_PC R_j5_PC R_j6_PC R_gripL_PC R_gripR_PC"/>
+
+
+  <!-- convert joint states to TF transforms for rviz, etc -->
+  <!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+    respawn="false" output="screen">
+    <remap from="/joint_states" to="/bluerov_config1/joint_states" />
+  </node> -->
+
+</launch>
