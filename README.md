@@ -13,6 +13,7 @@
 - Launch gazebo using **one** of the following commands:
   - `roslaunch uuv_gazebo_worlds empty_underwater_world.launch`
   - `roslaunch uuv_gazebo_worlds ocean_waves.launch`
+  - Or launch any other world in uuv_gazebo_worlds
 - Spawn vehicle: `roslaunch rexrov_dual_oberon_description upload_dual_rexrov_oberon7.launch`
 - Launch vehicle velocity PID + orientation stabilization controller using **one** of the following commands:
   - If using gamepad controller: `roslaunch rexrov_dual_oberon_control joy_velocity.launch`
@@ -27,3 +28,5 @@
   - Both manipulators: `roslaunch rexrov_dual_oberon_description dual_display.launch`
 - Run teleop node: `rosrun teleop_core teleop_cmd.py`
 - See [teleop_core](https://github.com/stevens-armlab/teleop_core) for more info about using haptic devices
+
+TIP: Closing Gazebo using CTRL-C takes a very long time, use `killall -9 gzserver gzclient`
