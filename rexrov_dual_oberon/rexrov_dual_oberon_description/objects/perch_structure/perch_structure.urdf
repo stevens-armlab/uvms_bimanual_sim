@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot name="perch_structure">
+
+  <!-- <link name="world"/>
+  
+  <link name="base_link">
+    <inertial>
+      <origin
+        xyz="-5.6035E-09 0.32462 -1.5406E-07"
+        rpy="0 0 0" />
+      <mass
+        value="5370.5" />
+      <inertia
+        ixx="507.83"
+        ixy="5.6209E-05"
+        ixz="-0.0011616"
+        iyy="33442"
+        iyz="0.0014456"
+        izz="33621" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.52941 0.54902 0.54902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="base_link.STL" />
+      </geometry>
+    </collision>
+  </link> -->
+
+  <link name="base_1">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="50.0" />
+      <inertia  ixx="3" ixy="0.0"  ixz="0.0"  iyy="3"  iyz="0.0"  izz="3" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="0.6 0.6 0.6" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="0.6 0.6 0.6" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="base_2">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="50.0" />
+      <inertia  ixx="3" ixy="0.0"  ixz="0.0"  iyy="3"  iyz="0.0"  izz="3" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="0.6 0.6 0.6" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="0.6 0.6 0.6" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="base_3">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="50.0" />
+      <inertia  ixx="3" ixy="0.0"  ixz="0.0"  iyy="3"  iyz="0.0"  izz="3" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="0.6 0.6 0.6" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="0.6 0.6 0.6" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="base_4">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="50.0" />
+      <inertia  ixx="3" ixy="0.0"  ixz="0.0"  iyy="3"  iyz="0.0"  izz="3" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="0.6 0.6 0.6" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="0.6 0.6 0.6" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="base_5">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="50.0" />
+      <inertia  ixx="3" ixy="0.0"  ixz="0.0"  iyy="3"  iyz="0.0"  izz="3" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="0.6 0.6 0.6" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="0.6 0.6 0.6" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="pillar1">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="1.0" />
+      <inertia  ixx="0.08416666666" ixy="0.0"  ixz="0.0"  iyy="0.08416666666"  iyz="0.0"  izz="0.00166666666" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="2" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="2" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="pillar2">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="1.0" />
+      <inertia  ixx="0.08416666666" ixy="0.0"  ixz="0.0"  iyy="0.08416666666"  iyz="0.0"  izz="0.00166666666" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="2" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="2" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="pillar3">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="1.0" />
+      <inertia  ixx="0.08416666666" ixy="0.0"  ixz="0.0"  iyy="0.08416666666"  iyz="0.0"  izz="0.00166666666" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="2" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="2" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="pillar4">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="1.0" />
+      <inertia  ixx="0.08416666666" ixy="0.0"  ixz="0.0"  iyy="0.08416666666"  iyz="0.0"  izz="0.00166666666" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="2" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="2" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="pillar5">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="1.0" />
+      <inertia  ixx="0.08416666666" ixy="0.0"  ixz="0.0"  iyy="0.08416666666"  iyz="0.0"  izz="0.00166666666" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="2" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="2" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="cross1">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="1.0" />
+      <inertia  ixx="0.08416666666" ixy="0.0"  ixz="0.0"  iyy="0.08416666666"  iyz="0.0"  izz="0.00166666666" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="6" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="6" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="cross2">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="1.0" />
+      <inertia  ixx="0.08416666666" ixy="0.0"  ixz="0.0"  iyy="0.08416666666"  iyz="0.0"  izz="0.00166666666" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="6" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="6" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="cross3">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="1.0" />
+      <inertia  ixx="0.08416666666" ixy="0.0"  ixz="0.0"  iyy="0.08416666666"  iyz="0.0"  izz="0.00166666666" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="6" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="6" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="cross4">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="1.0" />
+      <inertia  ixx="0.08416666666" ixy="0.0"  ixz="0.0"  iyy="0.08416666666"  iyz="0.0"  izz="0.00166666666" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="6" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="6" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="base_fix12" type="fixed">
+    <origin xyz = "3 0 0"/>
+    <parent link="base_1"/>
+    <child link="base_2"/>
+  </joint>
+
+  <joint name="base_fix13" type="fixed">
+    <origin xyz = "-3 0 0"/>
+    <parent link="base_1"/>
+    <child link="base_3"/>
+  </joint>
+
+  <joint name="base_fix14" type="fixed">
+    <origin xyz = "0 3 0"/>
+    <parent link="base_1"/>
+    <child link="base_4"/>
+  </joint>
+
+  <joint name="base_fix15" type="fixed">
+    <origin xyz = "0 -3 0"/>
+    <parent link="base_1"/>
+    <child link="base_5"/>
+  </joint>
+
+  <joint name="pillar_fix1" type="fixed">
+    <origin xyz = "0 0 1.3"/>
+    <parent link="base_1"/>
+    <child link="pillar1"/>
+  </joint>
+
+  <joint name="pillar_fix2" type="fixed">
+    <origin xyz = "0 0 1.3"/>
+    <parent link="base_2"/>
+    <child link="pillar2"/>
+  </joint>
+
+  <joint name="pillar_fix3" type="fixed">
+    <origin xyz = "0 0 1.3"/>
+    <parent link="base_3"/>
+    <child link="pillar3"/>
+  </joint>
+
+  <joint name="pillar_fix4" type="fixed">
+    <origin xyz = "0 0 1.3"/>
+    <parent link="base_4"/>
+    <child link="pillar4"/>
+  </joint>
+
+  <joint name="pillar_fix5" type="fixed">
+    <origin xyz = "0 0 1.3"/>
+    <parent link="base_5"/>
+    <child link="pillar5"/>
+  </joint>
+
+  <joint name="cross_fix1" type="fixed">
+    <origin xyz="0 0 1" rpy="0 1.57079632679 0"/>
+    <parent link="pillar1"/>
+    <child link="cross1"/>
+  </joint>
+
+  <joint name="cross_fix2" type="fixed">
+    <origin xyz="0 0 0" rpy="0 1.57079632679 0"/>
+    <parent link="pillar1"/>
+    <child link="cross2"/>
+  </joint>
+
+  <joint name="cross_fix3" type="fixed">
+    <origin xyz="0 0 1" rpy="1.57079632679 0 0"/>
+    <parent link="pillar1"/>
+    <child link="cross3"/>
+  </joint>
+
+  <joint name="cross_fix4" type="fixed">
+    <origin xyz="0 0 0" rpy="1.57079632679 0 0"/>
+    <parent link="pillar1"/>
+    <child link="cross4"/>
+  </joint>
+
+<!--   <joint name="base_fix" type="fixed">
+    <origin xyz="0 0 0"/>
+    <parent link="world"/>
+    <child link="base_link"/>
+  </joint> -->
+
+  <gazebo reference="pillar1">
+    <mu1>100.0</mu1>
+    <mu2>100.0</mu2>
+    <minDepth>0.003</minDepth>  
+    <maxVel>0</maxVel>  
+  </gazebo>
+
+  <gazebo reference="pillar2">
+    <mu1>100.0</mu1>
+    <mu2>100.0</mu2>
+    <minDepth>0.003</minDepth>  
+    <maxVel>0</maxVel>  
+  </gazebo>
+
+  <gazebo reference="pillar3">
+    <mu1>100.0</mu1>
+    <mu2>100.0</mu2>
+    <minDepth>0.003</minDepth>  
+    <maxVel>0</maxVel>  
+  </gazebo>
+
+  <gazebo reference="pillar4">
+    <mu1>100.0</mu1>
+    <mu2>100.0</mu2>
+    <minDepth>0.003</minDepth>  
+    <maxVel>0</maxVel>  
+  </gazebo>
+
+  <gazebo reference="pillar5">
+    <mu1>100.0</mu1>
+    <mu2>100.0</mu2>
+    <minDepth>0.003</minDepth>  
+    <maxVel>0</maxVel>  
+  </gazebo>
+
+  <gazebo reference="cross1">
+    <mu1>100.0</mu1>
+    <mu2>100.0</mu2>
+    <minDepth>0.003</minDepth>  
+    <maxVel>0</maxVel>  
+  </gazebo>
+
+  <gazebo reference="cross2">
+    <mu1>100.0</mu1>
+    <mu2>100.0</mu2>
+    <minDepth>0.003</minDepth>  
+    <maxVel>0</maxVel>  
+  </gazebo>
+
+  <gazebo reference="cross3">
+    <mu1>100.0</mu1>
+    <mu2>100.0</mu2>
+    <minDepth>0.003</minDepth>  
+    <maxVel>0</maxVel>  
+  </gazebo>
+
+  <gazebo reference="cross4">
+    <mu1>100.0</mu1>
+    <mu2>100.0</mu2>
+    <minDepth>0.003</minDepth>  
+    <maxVel>0</maxVel>  
+  </gazebo>
+</robot>

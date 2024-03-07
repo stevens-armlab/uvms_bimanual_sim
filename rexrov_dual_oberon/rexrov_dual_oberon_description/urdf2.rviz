@@ -6,6 +6,8 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
+        - /RobotModel1
+        - /TF1
       Splitter Ratio: 0.5
     Tree Height: 755
   - Class: rviz/Selection
@@ -183,9 +185,117 @@ Visualization Manager:
       Update Interval: 0
       Value: true
       Visual Enabled: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: false
+        EE1:
+          Value: false
+        EE2:
+          Value: false
+        base:
+          Value: true
+        baseL:
+          Value: true
+        baseR:
+          Value: true
+        base_link:
+          Value: false
+        elbow_linkL:
+          Value: true
+        elbow_linkR:
+          Value: true
+        end_effectorL:
+          Value: true
+        end_effectorR:
+          Value: true
+        finger_leftL:
+          Value: false
+        finger_leftR:
+          Value: false
+        finger_rightL:
+          Value: false
+        finger_rightR:
+          Value: false
+        finger_tip_leftL:
+          Value: false
+        finger_tip_leftR:
+          Value: false
+        finger_tip_rightL:
+          Value: false
+        finger_tip_rightR:
+          Value: false
+        forearmL:
+          Value: true
+        forearmR:
+          Value: true
+        left:
+          Value: false
+        left_tip:
+          Value: false
+        right:
+          Value: false
+        right_tip:
+          Value: false
+        shoulder_linkL:
+          Value: false
+        shoulder_linkR:
+          Value: false
+        upper_armL:
+          Value: true
+        upper_armR:
+          Value: true
+        wrist_linkL:
+          Value: true
+        wrist_linkR:
+          Value: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: false
+      Show Axes: true
+      Show Names: false
+      Tree:
+        base:
+          baseL:
+            shoulder_linkL:
+              upper_armL:
+                elbow_linkL:
+                  forearmL:
+                    wrist_linkL:
+                      end_effectorL:
+                        finger_leftL:
+                          finger_tip_leftL:
+                            {}
+                        finger_rightL:
+                          finger_tip_rightL:
+                            {}
+          baseR:
+            shoulder_linkR:
+              upper_armR:
+                elbow_linkR:
+                  forearmR:
+                    wrist_linkR:
+                      end_effectorR:
+                        finger_leftR:
+                          finger_tip_leftR:
+                            {}
+                        finger_rightR:
+                          finger_tip_rightR:
+                            {}
+          left:
+            {}
+          left_tip:
+            {}
+          right:
+            {}
+          right_tip:
+            {}
+      Update Interval: 0
+      Value: true
   Enabled: true
   Global Options:
-    Background Color: 48; 48; 48
+    Background Color: 255; 255; 255
     Default Light: true
     Fixed Frame: base
     Frame Rate: 30
@@ -211,25 +321,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 4.086756229400635
+      Distance: 2.1199047565460205
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.12074550241231918
-        Y: -0.02172638103365898
-        Z: -0.11791952699422836
+        X: 0.35632407665252686
+        Y: 0.014615225605666637
+        Z: 0.08888788521289825
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.3803979754447937
+      Pitch: 0.5147973299026489
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.5453981161117554
+      Yaw: 5.965407848358154
     Saved: ~
 Window Geometry:
   Displays:

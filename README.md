@@ -4,6 +4,7 @@
 - Install [uuv_simulator](https://uuvsimulator.github.io/installation/)
 - Install [haptic_control](https://github.com/stevens-armlab/haptic_control)
 - Install [teleop_core](https://github.com/stevens-armlab/teleop_core)
+- Install [gazebo_grasp_fix](https://github.com/JenniferBuehler/gazebo-pkgs)
 
 ## Spawning and Controlling Dual-Arm Rexrov
 - NOTE: If using haptic devices via ethernet, run the following when beginning each new terminal:
@@ -28,5 +29,6 @@
   - Both manipulators: `roslaunch rexrov_dual_oberon_description dual_display.launch`
 - Run teleop node: `rosrun teleop_core teleop_cmd.py`
 - See [teleop_core](https://github.com/stevens-armlab/teleop_core) for more info about using haptic devices
+- gazebo_grasp_plugin allows manipulators to grasp objects by rigidly fixing them to the gripper links when opposing contact forces are detected.
 
 TIP: Closing Gazebo using CTRL-C takes a very long time, use `killall -9 gzserver gzclient`
