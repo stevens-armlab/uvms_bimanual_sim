@@ -6,7 +6,7 @@
 - Install [teleop_core](https://github.com/stevens-armlab/teleop_core)
 - Install [gazebo_grasp_fix](https://github.com/JenniferBuehler/gazebo-pkgs)
 
-## Spawning and Controlling Dual-Arm Rexrov in Gazebo
+## Visualizing Dual-Arm Rexrov with RViz
 - Launch RViz with `roslaunch rexrov_dual_oberon_description dual_display.launch`
 - Run redundancy resolution node: `rosrun haptic_control redundancy_controller_oberon.py `
 
