@@ -6,7 +6,11 @@
 - Install [teleop_core](https://github.com/stevens-armlab/teleop_core)
 - Install [gazebo_grasp_fix](https://github.com/JenniferBuehler/gazebo-pkgs)
 
-## Spawning and Controlling Dual-Arm Rexrov
+## Spawning and Controlling Dual-Arm Rexrov in Gazebo
+- Launch RViz with `roslaunch rexrov_dual_oberon_description dual_display.launch`
+- Run redundancy resolution node: `rosrun haptic_control redundancy_controller_oberon.py `
+
+## Spawning and Controlling Dual-Arm Rexrov in Gazebo
 - NOTE: If using haptic devices via ethernet, run the following when beginning each new terminal:
   - `export ROS_IP=192.168.1.XX`
   - `export ROS_MASTER_URI=http://192.168.1.XX:11311/`
