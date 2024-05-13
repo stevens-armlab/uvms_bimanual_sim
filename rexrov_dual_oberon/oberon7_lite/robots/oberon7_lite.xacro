@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<robot name="oberon7" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Import serial arm -->
+  <xacro:include filename="$(find oberon7_lite)/urdf/serial_arm_lite.xacro" />
+  <!-- Import Gazebo specific macros -->
+  <xacro:include filename="$(find oberon7_lite)/urdf/serial_arm_lite.gazebo.xacro" />
+
+  <xacro:macro name="oberon7" params="namespace parent *origin">
+    <xacro:oberon7_serial_arm namespace="${namespace}"/>
+
+    <joint name="${namespace}/anchor" type="revolute">
+      <parent link="${parent}"/>
+      <child link="${namespace}/base"/>
+      <xacro:insert_block name="origin"/>
+      <axis xyz="0 1 0"/>
+      <limit effort="0" lower="0" upper="0" velocity="0"/>
+    </joint>
+  </xacro:macro>
+
+</robot>

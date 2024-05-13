@@ -1,0 +1,100 @@
+rexrov:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+
+
+  L_j1_PC:
+    type: effort_controllers/JointPositionController
+    joint: oberon_L/azimuth
+    pid: {p: 80.00, i: 0.0, d: 0.001}
+  L_j2_PC:
+    type: effort_controllers/JointPositionController
+    joint: oberon_L/shoulder
+    pid: {p: 600.00, i: 0.0, d: 10.0}
+  L_j3_PC:
+    type: effort_controllers/JointPositionController
+    joint: oberon_L/elbow
+    pid: {p: 100.00, i: 0.0, d: 0.001}
+  L_j4_PC:
+    type: effort_controllers/JointPositionController
+    joint: oberon_L/roll
+    pid: {p: 20.00, i: 0.0, d: 0.001}
+  L_j5_PC:
+    type: effort_controllers/JointPositionController
+    joint: oberon_L/pitch
+    pid: {p: 30.0, i: 0.0, d: 0.001}
+  L_j6_PC:
+    type: effort_controllers/JointPositionController
+    joint: oberon_L/wrist
+    pid: {p: 10.0, i: 0.0, d: 0.001}
+
+
+
+  L_gripL_PC:
+    type: effort_controllers/JointPositionController
+    joint: oberon_L/finger_left_joint
+    pid: {p: 0.5, i: 0.0, d: 0.010}
+  L_tipL_PC:
+    type: effort_controllers/JointPositionController
+    joint: oberon_L/finger_tip_left_joint
+    pid: {p: 0.5, i: 0.0, d: 0.010}
+  L_gripR_PC:
+    type: effort_controllers/JointPositionController
+    joint: oberon_L/finger_right_joint
+    pid: {p: 0.5, i: 0.0, d: 0.010}
+  L_tipR_PC:
+    type: effort_controllers/JointPositionController
+    joint: oberon_L/finger_tip_right_joint
+    pid: {p: 0.5, i: 0.0, d: 0.010}
+
+
+
+
+
+
+
+  R_j1_PC:
+    type: effort_controllers/JointPositionController
+    joint: oberon_R/azimuth
+    pid: {p: 80.00, i: 0.0, d: 0.001}
+  R_j2_PC:
+    type: effort_controllers/JointPositionController
+    joint: oberon_R/shoulder
+    pid: {p: 600.00, i: 0.0, d: 10.0}
+  R_j3_PC:
+    type: effort_controllers/JointPositionController
+    joint: oberon_R/elbow
+    pid: {p: 100.00, i: 0.0, d: 0.001}
+  R_j4_PC:
+    type: effort_controllers/JointPositionController
+    joint: oberon_R/roll
+    pid: {p: 20.00, i: 0.0, d: 0.001}
+  R_j5_PC:
+    type: effort_controllers/JointPositionController
+    joint: oberon_R/pitch
+    pid: {p: 30.0, i: 0.0, d: 0.001}
+  R_j6_PC:
+    type: effort_controllers/JointPositionController
+    joint: oberon_R/wrist
+    pid: {p: 10.0, i: 0.0, d: 0.001}
+
+
+
+  R_gripL_PC:
+    type: effort_controllers/JointPositionController
+    joint: oberon_R/finger_left_joint
+    pid: {p: 0.5, i: 0.0, d: 0.010}
+  R_tipL_PC:
+    type: effort_controllers/JointPositionController
+    joint: oberon_R/finger_tip_left_joint
+    pid: {p: 0.5, i: 0.0, d: 0.010}
+  R_gripR_PC:
+    type: effort_controllers/JointPositionController
+    joint: oberon_R/finger_right_joint
+    pid: {p: 0.5, i: 0.0, d: 0.010}
+  R_tipR_PC:
+    type: effort_controllers/JointPositionController
+    joint: oberon_R/finger_tip_right_joint
+    pid: {p: 0.5, i: 0.0, d: 0.010}

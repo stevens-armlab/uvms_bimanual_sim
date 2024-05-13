@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot name="block">
+
+  <link name="base">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.01" />
+      <inertia  ixx="0.3" ixy="0.0"  ixz="0.0"  iyy="0.3"  iyz="0.0"  izz="0.3" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="3 3 1.6" />
+      </geometry>
+      <material name="">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="3 3 1.6" />
+      </geometry>
+    </collision>
+  </link>
+
+<!--   <gazebo reference="base">
+    <mu1>1.0</mu1>
+    <mu2>1.0</mu2>
+    <minDepth>0.003</minDepth>  
+    <maxVel>0</maxVel>  
+  </gazebo> -->
+
+ 
+</robot>

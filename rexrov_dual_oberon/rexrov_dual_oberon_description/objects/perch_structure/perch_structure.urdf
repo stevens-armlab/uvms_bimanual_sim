@@ -2,53 +2,11 @@
 
 <robot name="perch_structure">
 
-  <!-- <link name="world"/>
-  
-  <link name="base_link">
-    <inertial>
-      <origin
-        xyz="-5.6035E-09 0.32462 -1.5406E-07"
-        rpy="0 0 0" />
-      <mass
-        value="5370.5" />
-      <inertia
-        ixx="507.83"
-        ixy="5.6209E-05"
-        ixz="-0.0011616"
-        iyy="33442"
-        iyz="0.0014456"
-        izz="33621" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="base_link.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.52941 0.54902 0.54902 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="base_link.STL" />
-      </geometry>
-    </collision>
-  </link> -->
-
   <link name="base_1">
     <inertial>
       <origin xyz="0 0 0" />
-      <mass value="50.0" />
-      <inertia  ixx="3" ixy="0.0"  ixz="0.0"  iyy="3"  iyz="0.0"  izz="3" />
+      <mass value="5.0" />
+      <inertia  ixx="0.3" ixy="0.0"  ixz="0.0"  iyy="0.3"  iyz="0.0"  izz="0.3" />
     </inertial>
     <visual>
       <origin xyz="0 0 0"/>
@@ -67,8 +25,8 @@
   <link name="base_2">
     <inertial>
       <origin xyz="0 0 0" />
-      <mass value="50.0" />
-      <inertia  ixx="3" ixy="0.0"  ixz="0.0"  iyy="3"  iyz="0.0"  izz="3" />
+      <mass value="5.0" />
+      <inertia  ixx="0.3" ixy="0.0"  ixz="0.0"  iyy="0.3"  iyz="0.0"  izz="0.3" />
     </inertial>
     <visual>
       <origin xyz="0 0 0"/>
@@ -87,8 +45,8 @@
   <link name="base_3">
     <inertial>
       <origin xyz="0 0 0" />
-      <mass value="50.0" />
-      <inertia  ixx="3" ixy="0.0"  ixz="0.0"  iyy="3"  iyz="0.0"  izz="3" />
+      <mass value="5.0" />
+      <inertia  ixx="0.3" ixy="0.0"  ixz="0.0"  iyy="0.3"  iyz="0.0"  izz="0.3" />
     </inertial>
     <visual>
       <origin xyz="0 0 0"/>
@@ -107,8 +65,8 @@
   <link name="base_4">
     <inertial>
       <origin xyz="0 0 0" />
-      <mass value="50.0" />
-      <inertia  ixx="3" ixy="0.0"  ixz="0.0"  iyy="3"  iyz="0.0"  izz="3" />
+      <mass value="5.0" />
+      <inertia  ixx="0.3" ixy="0.0"  ixz="0.0"  iyy="0.3"  iyz="0.0"  izz="0.3" />
     </inertial>
     <visual>
       <origin xyz="0 0 0"/>
@@ -127,8 +85,8 @@
   <link name="base_5">
     <inertial>
       <origin xyz="0 0 0" />
-      <mass value="50.0" />
-      <inertia  ixx="3" ixy="0.0"  ixz="0.0"  iyy="3"  iyz="0.0"  izz="3" />
+      <mass value="5.0" />
+      <inertia  ixx="0.3" ixy="0.0"  ixz="0.0"  iyy="0.3"  iyz="0.0"  izz="0.3" />
     </inertial>
     <visual>
       <origin xyz="0 0 0"/>
@@ -324,6 +282,169 @@
     </collision>
   </link>
 
+  <link name="sup1">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="1.0" />
+      <inertia  ixx="0.08416666666" ixy="0.0"  ixz="0.0"  iyy="0.08416666666"  iyz="0.0"  izz="0.00166666666" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="1" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="sup2">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="1.0" />
+      <inertia  ixx="0.08416666666" ixy="0.0"  ixz="0.0"  iyy="0.08416666666"  iyz="0.0"  izz="0.00166666666" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="1" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="sup3">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="1.0" />
+      <inertia  ixx="0.08416666666" ixy="0.0"  ixz="0.0"  iyy="0.08416666666"  iyz="0.0"  izz="0.00166666666" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="1" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="sup4">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="1.0" />
+      <inertia  ixx="0.08416666666" ixy="0.0"  ixz="0.0"  iyy="0.08416666666"  iyz="0.0"  izz="0.00166666666" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="1" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="sup5">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="1.0" />
+      <inertia  ixx="0.08416666666" ixy="0.0"  ixz="0.0"  iyy="0.08416666666"  iyz="0.0"  izz="0.00166666666" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="1" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="sup6">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="1.0" />
+      <inertia  ixx="0.08416666666" ixy="0.0"  ixz="0.0"  iyy="0.08416666666"  iyz="0.0"  izz="0.00166666666" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="1" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="sup7">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="1.0" />
+      <inertia  ixx="0.08416666666" ixy="0.0"  ixz="0.0"  iyy="0.08416666666"  iyz="0.0"  izz="0.00166666666" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="1" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="sup8">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="1.0" />
+      <inertia  ixx="0.08416666666" ixy="0.0"  ixz="0.0"  iyy="0.08416666666"  iyz="0.0"  izz="0.00166666666" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.02" length="1" />
+      </geometry>
+    </collision>
+  </link>
+
+
+
+
   <joint name="base_fix12" type="fixed">
     <origin xyz = "3 0 0"/>
     <parent link="base_1"/>
@@ -402,24 +523,107 @@
     <child link="cross4"/>
   </joint>
 
+  <joint name="sup_fix1" type="fixed">
+    <origin xyz = "1 0 0.5"/>
+    <parent link="pillar1"/>
+    <child link="sup1"/>
+  </joint>
+
+  <joint name="sup_fix2" type="fixed">
+    <origin xyz = "2 0 0.5"/>
+    <parent link="pillar1"/>
+    <child link="sup2"/>
+  </joint>
+
+  <joint name="sup_fix3" type="fixed">
+    <origin xyz = "0 1 0.5"/>
+    <parent link="pillar1"/>
+    <child link="sup3"/>
+  </joint>
+
+  <joint name="sup_fix4" type="fixed">
+    <origin xyz = "0 2 0.5"/>
+    <parent link="pillar1"/>
+    <child link="sup4"/>
+  </joint>
+
+  <joint name="sup_fix5" type="fixed">
+    <origin xyz = "-1 0 0.5"/>
+    <parent link="pillar1"/>
+    <child link="sup5"/>
+  </joint>
+
+  <joint name="sup_fix6" type="fixed">
+    <origin xyz = "-2 0 0.5"/>
+    <parent link="pillar1"/>
+    <child link="sup6"/>
+  </joint>
+
+  <joint name="sup_fix7" type="fixed">
+    <origin xyz = "0 -1 0.5"/>
+    <parent link="pillar1"/>
+    <child link="sup7"/>
+  </joint>
+
+  <joint name="sup_fix8" type="fixed">
+    <origin xyz = "0 -2 0.5"/>
+    <parent link="pillar1"/>
+    <child link="sup8"/>
+  </joint>
+
+
 <!--   <joint name="base_fix" type="fixed">
     <origin xyz="0 0 0"/>
     <parent link="world"/>
     <child link="base_link"/>
   </joint> -->
 
-  <gazebo reference="pillar1">
+  <gazebo reference="base_1">
+    <mu1>100.0</mu1>
+    <mu2>100.0</mu2>
+    <minDepth>0.003</minDepth>  
+    <maxVel>0</maxVel>
+    <!-- <kinematic> true </kinematic> -->
+  </gazebo>
+
+  <gazebo reference="base_2">
+    <mu1>100.0</mu1>
+    <mu2>100.0</mu2>
+    <minDepth>0.003</minDepth>  
+    <maxVel>0</maxVel>
+    <!-- <kinematic> true </kinematic> -->
+  </gazebo>
+
+  <gazebo reference="base_3">
     <mu1>100.0</mu1>
     <mu2>100.0</mu2>
     <minDepth>0.003</minDepth>  
     <maxVel>0</maxVel>  
+    <!-- <kinematic> true </kinematic> -->
+  </gazebo>
+
+  <gazebo reference="base_4">
+    <mu1>100.0</mu1>
+    <mu2>100.0</mu2>
+    <minDepth>0.003</minDepth>  
+    <maxVel>0</maxVel>  
+    <!-- <kinematic> true </kinematic> -->
+  </gazebo>
+
+  <gazebo reference="pillar1">
+    <mu1>100.0</mu1>
+    <mu2>100.0</mu2>
+    <minDepth>0.003</minDepth>  
+    <maxVel>0</maxVel>
+    <!-- <kinematic> true </kinematic> -->
   </gazebo>
 
   <gazebo reference="pillar2">
     <mu1>100.0</mu1>
     <mu2>100.0</mu2>
     <minDepth>0.003</minDepth>  
-    <maxVel>0</maxVel>  
+    <maxVel>0</maxVel>
+    <!-- <kinematic> true </kinematic> -->
   </gazebo>
 
   <gazebo reference="pillar3">
@@ -427,6 +631,7 @@
     <mu2>100.0</mu2>
     <minDepth>0.003</minDepth>  
     <maxVel>0</maxVel>  
+    <!-- <kinematic> true </kinematic> -->
   </gazebo>
 
   <gazebo reference="pillar4">
@@ -434,6 +639,7 @@
     <mu2>100.0</mu2>
     <minDepth>0.003</minDepth>  
     <maxVel>0</maxVel>  
+    <!-- <kinematic> true </kinematic> -->
   </gazebo>
 
   <gazebo reference="pillar5">
@@ -441,6 +647,7 @@
     <mu2>100.0</mu2>
     <minDepth>0.003</minDepth>  
     <maxVel>0</maxVel>  
+    <!-- <kinematic> true </kinematic> -->
   </gazebo>
 
   <gazebo reference="cross1">
@@ -448,6 +655,7 @@
     <mu2>100.0</mu2>
     <minDepth>0.003</minDepth>  
     <maxVel>0</maxVel>  
+    <!-- <kinematic> true </kinematic> -->
   </gazebo>
 
   <gazebo reference="cross2">
@@ -455,6 +663,7 @@
     <mu2>100.0</mu2>
     <minDepth>0.003</minDepth>  
     <maxVel>0</maxVel>  
+    <!-- <kinematic> true </kinematic> -->
   </gazebo>
 
   <gazebo reference="cross3">
@@ -462,6 +671,7 @@
     <mu2>100.0</mu2>
     <minDepth>0.003</minDepth>  
     <maxVel>0</maxVel>  
+    <!-- <kinematic> true </kinematic> -->
   </gazebo>
 
   <gazebo reference="cross4">
@@ -469,5 +679,70 @@
     <mu2>100.0</mu2>
     <minDepth>0.003</minDepth>  
     <maxVel>0</maxVel>  
+    <!-- <kinematic> true </kinematic> -->
+  </gazebo>
+
+  <gazebo reference="sup1">
+    <mu1>100.0</mu1>
+    <mu2>100.0</mu2>
+    <minDepth>0.003</minDepth>  
+    <maxVel>0</maxVel>  
+    <!-- <kinematic> true </kinematic> -->
+  </gazebo>
+
+  <gazebo reference="sup2">
+    <mu1>100.0</mu1>
+    <mu2>100.0</mu2>
+    <minDepth>0.003</minDepth>  
+    <maxVel>0</maxVel>  
+    <!-- <kinematic> true </kinematic> -->
+  </gazebo>
+
+  <gazebo reference="sup3">
+    <mu1>100.0</mu1>
+    <mu2>100.0</mu2>
+    <minDepth>0.003</minDepth>  
+    <maxVel>0</maxVel>  
+    <!-- <kinematic> true </kinematic> -->  
+  </gazebo>
+
+  <gazebo reference="sup4">
+    <mu1>100.0</mu1>
+    <mu2>100.0</mu2>
+    <minDepth>0.003</minDepth>  
+    <maxVel>0</maxVel>  
+    <!-- <kinematic> true </kinematic> -->  
+  </gazebo>
+
+  <gazebo reference="sup5">
+    <mu1>100.0</mu1>
+    <mu2>100.0</mu2>
+    <minDepth>0.003</minDepth>  
+    <maxVel>0</maxVel>  
+    <!-- <kinematic> true </kinematic> -->  
+  </gazebo>
+
+  <gazebo reference="sup6">
+    <mu1>100.0</mu1>
+    <mu2>100.0</mu2>
+    <minDepth>0.003</minDepth>  
+    <maxVel>0</maxVel>  
+    <!-- <kinematic> true </kinematic> -->  
+  </gazebo>
+
+  <gazebo reference="sup7">
+    <mu1>100.0</mu1>
+    <mu2>100.0</mu2>
+    <minDepth>0.003</minDepth>  
+    <maxVel>0</maxVel>  
+    <!-- <kinematic> true </kinematic> -->  
+  </gazebo>
+
+  <gazebo reference="sup8">
+    <mu1>100.0</mu1>
+    <mu2>100.0</mu2>
+    <minDepth>0.003</minDepth>  
+    <maxVel>0</maxVel>  
+    <!-- <kinematic> true </kinematic> -->  
   </gazebo>
 </robot>

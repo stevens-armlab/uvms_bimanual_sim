@@ -1,0 +1,80 @@
+rexrov:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+
+
+  L_j1:
+    type: effort_controllers/JointEffortController
+    joint: oberon_L/azimuth
+  L_j2:
+    type: effort_controllers/JointEffortController
+    joint: oberon_L/shoulder
+  L_j3:
+    type: effort_controllers/JointEffortController
+    joint: oberon_L/elbow
+  L_j4:
+    type: effort_controllers/JointEffortController
+    joint: oberon_L/roll
+  L_j5:
+    type: effort_controllers/JointEffortController
+    joint: oberon_L/pitch
+  L_j6:
+    type: effort_controllers/JointEffortController
+    joint: oberon_L/wrist
+
+
+
+  L_gripL:
+    type: effort_controllers/JointEffortController
+    joint: oberon_L/finger_left_joint
+  L_tipL:
+    type: effort_controllers/JointEffortController
+    joint: oberon_L/finger_tip_left_joint
+  L_gripR:
+    type: effort_controllers/JointEffortController
+    joint: oberon_L/finger_right_joint
+  L_tipR:
+    type: effort_controllers/JointEffortController
+    joint: oberon_L/finger_tip_right_joint
+
+
+
+
+
+
+
+  R_j1:
+    type: effort_controllers/JointEffortController
+    joint: oberon_R/azimuth
+  R_j2:
+    type: effort_controllers/JointEffortController
+    joint: oberon_R/shoulder
+  R_j3:
+    type: effort_controllers/JointEffortController
+    joint: oberon_R/elbow
+  R_j4:
+    type: effort_controllers/JointEffortController
+    joint: oberon_R/roll
+  R_j5:
+    type: effort_controllers/JointEffortController
+    joint: oberon_R/pitch
+  R_j6:
+    type: effort_controllers/JointEffortController
+    joint: oberon_R/wrist
+
+
+
+  R_gripL:
+    type: effort_controllers/JointEffortController
+    joint: oberon_R/finger_left_joint
+  R_tipL:
+    type: effort_controllers/JointEffortController
+    joint: oberon_R/finger_tip_left_joint
+  R_gripR:
+    type: effort_controllers/JointEffortController
+    joint: oberon_R/finger_right_joint
+  R_tipR:
+    type: effort_controllers/JointEffortController
+    joint: oberon_R/finger_tip_right_joint
