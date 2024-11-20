@@ -1,0 +1,32 @@
+<launch>
+  <arg name="model_name" default="rexrov" />
+  <arg name="uuv_name" default="$(arg model_name)"/>
+
+  <include file="$(find uuv_thruster_manager)/launch/thruster_manager.launch">
+    <arg name="uuv_name" value="$(arg uuv_name)" />
+    <arg name="model_name" value="$(arg model_name)" />
+  </include>
+
+  <group ns="$(arg uuv_name)">
+    <rosparam file="$(find rexrov_triple_oberon_control)/src/config/inertial_lite.yaml" command="load"/>
+    <rosparam file="$(find rexrov_triple_oberon_control)/src/config/vel_pid_control.yaml" command="load"/>
+    <rosparam file="$(find rexrov_triple_oberon_control)/src/config/pos_pid_control.yaml" command="load"/>
+
+    <node pkg="uuv_control_cascaded_pid" type="AccelerationControl.py" name="acceleration_control"
+        output="screen">
+      <param name="tf_prefix" type="string" value="$(arg uuv_name)/" />
+    </node>
+
+    <node pkg="rexrov_triple_oberon_control" type="velocity_stabilize.py" name="velocity_control"
+        output="screen">
+      <remap from="odom" to="/$(arg uuv_name)/pose_gt"/>
+      <remap from="cmd_accel" to="/$(arg uuv_name)/cmd_accel"/>
+    </node>
+
+    <node pkg="rexrov_triple_oberon_control" type="position_stabilize.py" name="position_control"
+        output="screen">
+      <remap from="odom" to="/$(arg uuv_name)/pose_gt"/>
+    </node>
+
+  </group>
+</launch>

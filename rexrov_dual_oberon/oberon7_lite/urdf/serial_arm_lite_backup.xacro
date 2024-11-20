@@ -55,7 +55,7 @@
             <collision>
                 <origin xyz="0 0 0" rpy="0 0 0"/>
                 <geometry>
-                    <cylinder radius="1e-9" length="1e-9" />
+                    <mesh filename="file://$(find oberon7_lite)/meshes/serial_arm/collision/Base.stl"/>
                 </geometry>
             </collision>
         </link>
@@ -80,7 +80,7 @@
             <collision>
                 <origin xyz="${shoulder_link_com}" rpy="0 0 0"/>
                 <geometry>
-                    <cylinder radius="1e-9" length="1e-9" />
+                    <cylinder radius="${0.5 * shoulder_link_width}" length="${shoulder_link_height}" />
                 </geometry>
             </collision>
         </link>
@@ -92,7 +92,7 @@
             <!-- <dynamics damping="0.5" friction="200"/> -->
             <!-- <dynamics damping="1" friction="150"/> -->
             <dynamics damping="1" friction="0.50"/>
-            <limit lower="${-180 * d2r}" upper="${180 * d2r}" velocity="0.17" effort="200"/>
+            <limit lower="${-60 * d2r}" upper="${60 * d2r}" velocity="0.17" effort="200"/>
             <!-- <limit lower="${-60 * d2r}" upper="${60 * d2r}" velocity="0.17" effort="1000"/> -->
         </joint>
 
@@ -118,7 +118,7 @@
             <collision>
                 <origin xyz="${upper_arm_com}" rpy="0 ${0.5*pi} 0"/>
                 <geometry>
-                    <cylinder radius="1e-9" length="1e-9" />
+                    <cylinder radius="${0.5 * upper_arm_width}" length="${upper_arm_length}"/>
                 </geometry>
             </collision>
         </link>
@@ -157,7 +157,7 @@
             <collision>
                 <origin xyz="${elbow_link_com}" rpy="0 ${0.5*pi} ${0.5*pi}"/>
                 <geometry>
-                    <cylinder radius="1e-9" length="1e-9" />
+                    <cylinder radius="${0.5 * elbow_link_height}" length="${elbow_link_length}"/>
                 </geometry>
             </collision>
         </link>
@@ -196,7 +196,7 @@
             <collision>
                 <origin xyz="${forearm_com}" rpy="0 0 0"/>
                 <geometry>
-                    <cylinder radius="1e-9" length="1e-9" />
+                    <cylinder radius="${0.5 * forearm_width}" length="${forearm_height}"/>
                 </geometry>
             </collision>
         </link>
@@ -236,7 +236,7 @@
             <collision>
                 <origin xyz="${wrist_com}" rpy="0 ${0.5*pi} 0"/>
                 <geometry>
-                    <cylinder radius="1e-9" length="1e-9" />
+                    <cylinder radius="${0.5 * wrist_height}" length="${wrist_length}"/>
                 </geometry>
             </collision>
         </link>

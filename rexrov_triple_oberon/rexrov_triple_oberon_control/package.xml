@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>rexrov_triple_oberon_control</name>
+  <version>0.0.0</version>
+  <description>The rexrov_triple_oberon_control package</description>
+
+  <maintainer email="jsitler@todo.todo">jsitler</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>dynamic_reconfigure</depend>
+
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>tf</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>python-numpy</exec_depend>
+  <export>
+  </export>
+</package>

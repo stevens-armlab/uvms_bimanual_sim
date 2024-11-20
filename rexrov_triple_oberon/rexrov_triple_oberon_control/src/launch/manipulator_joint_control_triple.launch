@@ -1,0 +1,17 @@
+<launch>
+
+  <!-- Load joint controller configurations from YAML file to parameter server -->
+  <rosparam file="$(find rexrov_triple_oberon_control)/src/config/joint_control_triple.yaml" command="load"/>
+
+  <!-- load the controllers -->
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+    output="screen" ns="/rexrov" args="arm1_j1_PC arm1_j2_PC arm1_j3_PC arm1_j4_PC arm1_j5_PC arm1_j6_PC arm1_gripL_PC arm1_gripR_PC arm2_j1_PC arm2_j2_PC arm2_j3_PC arm2_j4_PC arm2_j5_PC arm2_j6_PC arm2_gripL_PC arm2_gripR_PC arm3_j1_PC arm3_j2_PC arm3_j3_PC arm3_j4_PC arm3_j5_PC arm3_j6_PC arm3_gripL_PC arm3_gripR_PC"/>
+
+
+  <!-- convert joint states to TF transforms for rviz, etc -->
+  <!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+    respawn="false" output="screen">
+    <remap from="/joint_states" to="/bluerov_config1/joint_states" />
+  </node> -->
+
+</launch>
